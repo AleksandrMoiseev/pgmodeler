@@ -11,7 +11,7 @@ MSYS2|[Посетить](https://www.msys2.org/)|[Загрузить](https://gi
 
 ## Сборка pgModeler
 Все команды выполняем в консоли `C:\msys64\msys2_shell.cmd -mingw64`
-
+### Обновляем систему и устанавливаем пакеты.
 ```console
 pacman -Suy
 pacman -Suy
