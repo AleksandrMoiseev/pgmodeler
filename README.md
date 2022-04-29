@@ -11,7 +11,7 @@ MSYS2|[Посетить](https://www.msys2.org/)|[Загрузить](https://gi
 
 ## Сборка pgModeler
 Все команды выполняем в консоли `C:\msys64\msys2_shell.cmd -mingw64`
-### Обновляем систему и устанавливаем пакеты.
+### Обновляем систему и устанавливаем пакеты
 ```console
 pacman -Suy
 pacman -Suy
@@ -60,11 +60,11 @@ make
 ```console
 cd c:/repo/pgmodeler
 make install
-cd c:/pgModeler
-windeployqt pgmodeler.exe gui.dll
 ```
 ### Копируем библиотеки в `C:\pgModeler`
 ```console
+cd c:/pgModeler
+windeployqt pgmodeler.exe gui.dll
 cd c:/msys64/mingw64/bin/
 cp libicuin*.dll libicuuc*.dll libicudt*.dll libpcre2-16-0.dll libharfbuzz-0.dll \
    libpng16-16.dll libfreetype-6.dll libgraphite2.dll libglib-2.0-0.dll libpcre-1.dll \
