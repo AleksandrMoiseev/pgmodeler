@@ -49,7 +49,8 @@ git clone https://github.com/pgmodeler/plugins.git
 ```
 ### Выполняем конфигурацию
 ```console
-qmake -r CONFIG+=release PREFIX=C:/pgModeler pgmodeler.pro
+cd c:/repo/pgmodeler
+qmake6 -r CONFIG+=release PREFIX=C:/pgModeler pgmodeler.pro
 ```
 ### Выполняем компиляцию
 ```console
@@ -64,14 +65,14 @@ make install
 ### Копируем библиотеки в `C:\pgModeler`
 ```console
 cd c:/pgModeler
-windeployqt pgmodeler.exe gui.dll
+windeployqt-qt6.exe pgmodeler.exe gui.dll
 cd c:/msys64/mingw64/bin/
 cp libicuin*.dll libicuuc*.dll libicudt*.dll libpcre2-16-0.dll libharfbuzz-0.dll \
    libpng16-16.dll libfreetype-6.dll libgraphite2.dll libglib-2.0-0.dll libpcre-1.dll \
    libbz2-1.dll libssl-1_1-x64.dll libcrypto-1_1-x64.dll libgcc_s_seh-1.dll \
    libstdc++-6.dll libwinpthread-1.dll zlib1.dll libpq.dll libxml2-2.dll liblzma-5.dll \
    libiconv-2.dll libintl-8.dll libbrotlidec.dll libbrotlicommon.dll \
-   libdouble-conversion.dll libzstd.dll libmd4c.dll C:/pgModeler
+   libdouble-conversion.dll libzstd.dll libmd4c.dll libb2-1.dll C:/pgModeler
 ```
 ## Удаляем файлы созданные в процессе компиляции
 ```console
