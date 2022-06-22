@@ -15,7 +15,7 @@ MSYS2|[Посетить](https://www.msys2.org/)|[Загрузить](https://gi
 ```console
 pacman -Suy
 pacman -Suy
-pacman -S base-devel mingw-w64-x86_64-make mingw-w64-x86_64-gcc mingw-w64-x86_64-postgresql mingw-w64-x86_64-qt5 git
+pacman -S base-devel mingw-w64-x86_64-make mingw-w64-x86_64-gcc mingw-w64-x86_64-postgresql mingw-w64-x86_64-qt6 git
 ```
 
 | Библиотека | Версия | Комментарий |
@@ -23,7 +23,7 @@ pacman -S base-devel mingw-w64-x86_64-make mingw-w64-x86_64-gcc mingw-w64-x86_64
 |[mingw-w64-x86_64-make](https://packages.msys2.org/package/mingw-w64-x86_64-make)|4.3|GNU make utility to maintain groups of programs|
 |[mingw-w64-x86_64-gcc](https://packages.msys2.org/package/mingw-w64-x86_64-gcc)|11.2.0|GNU Compiler Collection (C,C++,OpenMP)|
 |[mingw-w64-x86_64-postgresql](https://packages.msys2.org/package/mingw-w64-x86_64-postgresql)|14.2|Libraries for use with PostgreSQL|
-|[mingw-w64-x86_64-qt5](https://packages.msys2.org/package/mingw-w64-x86_64-qt5)|5.15.2|Meta package for Qt5 components|
+|[mingw-w64-x86_64-qt6...](https://packages.msys2.org/package/)|6.3.0|Packages for Qt6 components|
 |[git](https://packages.msys2.org/base/git)|2.35.3-1|The fast distributed version control system|
 
 ### Создаём папку для приложения
@@ -35,14 +35,14 @@ mkdir c:/pgModeler
 mkdir c:/repo
 ```
 ### Загружаем исходный код
-На момент написания статьи последняя версия сборки 1.0.0-alpha.
+На момент написания статьи последняя версия сборки "1.0.0-alpha1".
 Загружаем исходный код с [Github](https://github.com/pgmodeler/pgmodeler)
 ```console
 cd c:/repo
 git clone https://github.com/pgmodeler/pgmodeler.git
 # Выбираем версию сборки
 cd c:/repo/pgmodeler
-git checkout 1.0.0-alpha
+git checkout 1.0.0-alpha1
 # Загружаем подключаемые библиотеки
 cd c:/repo/pgmodeler
 git clone https://github.com/pgmodeler/plugins.git
